@@ -1,0 +1,6 @@
+/* Планшетная сцена 1194×834, масштабируется под окно браузера */
+html, body { margin: 0; height: 100%; background: #E4E7ED; overflow: hidden; }
+.stage { position: absolute; left: 0; top: 0; width: 1194px; height: 834px; transform-origin: 0 0; box-shadow: 0 20px 60px rgba(20, 24, 32, .18); border-radius: 18px; overflow: hidden; }
+a, button { cursor: pointer; }
+a:focus-visible, button:focus-visible, input:focus-visible { outline: 3px solid #8FB0FF; outline-offset: 2px; }
+@media (prefers-reduced-motion: no-preference) { a, button { transition: opacity .15s ease, transform .15s ease; } a:active, button:active { transform: scale(.97); } }

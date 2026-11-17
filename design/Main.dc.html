@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Квартирант — Лента (Уютный)</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap">
+<style>
+body{margin:0}
+a{color:#9A3F1F}a:hover{color:#7A2F14}
+</style>
+</helmet>
+<div style="width: 1194px; height: 834px; display: flex; background: #F5EFE6; color: #2B2420; font-family: 'Manrope', sans-serif; overflow: hidden;">
+
+<aside style="width: 236px; flex: none; box-sizing: border-box; padding: 28px 18px 24px; display: flex; flex-direction: column; gap: 28px; border-right: 1px solid #E6DCCD;">
+  <div style="display: flex; align-items: center; gap: 10px; padding: 0 8px;">
+    <div style="width: 38px; height: 38px; border-radius: 12px; background: {{accent}}; color: #FFFDF9; display: flex; align-items: center; justify-content: center;">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11l8-7 8 7v9a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-9z"></path><circle cx="12" cy="13" r="2"></circle><path d="M12 15v3"></path></svg>
+    </div>
+    <span style="font-family: 'Lora', serif; font-size: 22px; font-weight: 700; letter-spacing: -0.01em;">Квартирант</span>
+  </div>
+
+  <nav aria-label="Основное меню" style="display: flex; flex-direction: column; gap: 4px;">
+    <a href="#" style="display: flex; align-items: center; gap: 12px; padding: 12px 14px; border-radius: 14px; background: #F3DED3; color: #9A3F1F; font-weight: 700; font-size: 15px; text-decoration: none;">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="7" height="7" rx="2"></rect><rect x="3" y="14" width="7" height="6" rx="2"></rect><path d="M14 6h7M14 10h5M14 15h7M14 19h5"></path></svg>
+      Лента
+    </a>
+    <a href="A-Neighbors.dc.html" style="display: flex; align-items: center; gap: 12px; padding: 12px 14px; border-radius: 14px; color: #4A3F37; font-weight: 600; font-size: 15px; text-decoration: none;">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"></circle><path d="M2.5 20c.8-3.6 3.4-5.5 6.5-5.5s5.7 1.9 6.5 5.5"></path><path d="M15.5 4.8a3.3 3.3 0 0 1 0 6.4M17.5 14.8c2 .7 3.4 2.4 4 5.2"></path></svg>
+      Подбор соседа
+    </a>
+    <a href="#" style="display: flex; align-items: center; gap: 12px; padding: 12px 14px; border-radius: 14px; color: #4A3F37; font-weight: 600; font-size: 15px; text-decoration: none;">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h11a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H9l-4 3v-3H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"></path><path d="M17 8h3a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2h-1v3l-4-3h-3"></path></svg>
+      Коннекты
+      <span style="margin-left: auto; min-width: 22px; height: 22px; padding: 0 6px; box-sizing: border-box; border-radius: 11px; background: {{accent}}; color: #FFFFFF; font-size: 12px; font-weight: 800; display: flex; align-items: center; justify-content: center;">3</span>
+    </a>
+    <a href="#" style="display: flex; align-items: center; gap: 12px; padding: 12px 14px; border-radius: 14px; color: #4A3F37; font-weight: 600; font-size: 15px; text-decoration: none;">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"></path></svg>
+      Избранное
+    </a>
+    <a href="#" style="display: flex; align-items: center; gap: 12px; padding: 12px 14px; border-radius: 14px; color: #4A3F37; font-weight: 600; font-size: 15px; text-decoration: none;">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c1-4 4.2-6 8-6s7 2 8 6"></path></svg>
+      Профиль
+    </a>
+  </nav>
+
+  <div style="flex: 1;"></div>
+
+  <div style="background: #FFFDF9; border: 1px solid #E6DCCD; border-radius: 18px; padding: 16px; display: flex; flex-direction: column; gap: 10px;">
+    <div style="font-size: 13px; font-weight: 800;">Анкета соседа</div>
+    <div style="font-size: 12px; color: #6E6156; line-height: 1.45;">Ответьте ещё на 7 вопросов — подбор станет точнее</div>
+    <div style="height: 6px; border-radius: 3px; background: #EFE5D8;"><div style="width: 56%; height: 6px; border-radius: 3px; background: #4F6B4C;"></div></div>
+    <a href="#" style="font-size: 13px; font-weight: 800; color: #9A3F1F; text-decoration: none;">Продолжить · 9 из 16</a>
+  </div>
+
+  <a href="#" style="display: flex; align-items: center; justify-content: center; gap: 8px; height: 48px; border-radius: 14px; background: {{accent}}; color: #FFFDF9; font-weight: 800; font-size: 15px; text-decoration: none;">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg>
+    Подать объявление
+  </a>
+</aside>
+
+<main style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 18px; padding: 26px 28px 0;">
+  <div style="display: flex; align-items: center; gap: 16px;">
+    <div style="flex: 1; min-width: 0;">
+      <h1 style="margin: 0; font-family: 'Lora', serif; font-size: 30px; font-weight: 600; letter-spacing: -0.01em;">Аренда в Алматы</h1>
+      <p style="margin: 4px 0 0; font-size: 14px; color: #6E6156;">128 объявлений по вашим фильтрам · сначала самые подходящие вам</p>
+    </div>
+    <label style="display: flex; align-items: center; gap: 10px; width: 290px; height: 46px; padding: 0 16px; box-sizing: border-box; background: #FFFDF9; border: 1px solid #E6DCCD; border-radius: 14px; color: #6E6156;">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-3.5-3.5"></path></svg>
+      <input aria-label="Поиск по району, ЖК или улице" placeholder="Район, ЖК или улица" style="border: 0; outline: 0; background: transparent; font: inherit; font-size: 14px; color: #2B2420; flex: 1; min-width: 0;">
+    </label>
+    <button aria-label="Уведомления" style="width: 46px; height: 46px; flex: none; border-radius: 14px; border: 1px solid #E6DCCD; background: #FFFDF9; color: #2B2420; display: flex; align-items: center; justify-content: center; position: relative; cursor: pointer;">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 16V11a6 6 0 0 1 12 0v5l1.5 2h-15L6 16z"></path><path d="M10 21h4"></path></svg>
+      <span style="position: absolute; top: 10px; right: 11px; width: 8px; height: 8px; border-radius: 4px; background: {{accent}};"></span>
+    </button>
+  </div>
+
+  <div style="display: flex; align-items: center; gap: 10px;">
+    <div style="display: flex; padding: 4px; background: #EADFCF; border-radius: 14px; gap: 2px;">
+      <button style="height: 34px; padding: 0 14px; border: 0; border-radius: 10px; background: #FFFDF9; font: inherit; font-size: 14px; font-weight: 800; color: #2B2420; box-shadow: 0 1px 2px rgba(43,36,32,.14); cursor: pointer;">Всё</button>
+      <button style="height: 34px; padding: 0 14px; border: 0; border-radius: 10px; background: transparent; font: inherit; font-size: 14px; font-weight: 600; color: #5C5047; cursor: pointer;">Квартиры</button>
+      <button style="height: 34px; padding: 0 14px; border: 0; border-radius: 10px; background: transparent; font: inherit; font-size: 14px; font-weight: 600; color: #5C5047; cursor: pointer;">Комнаты</button>
+      <button style="height: 34px; padding: 0 14px; border: 0; border-radius: 10px; background: transparent; font: inherit; font-size: 14px; font-weight: 600; color: #5C5047; cursor: pointer;">Места</button>
+    </div>
+    <button style="height: 42px; padding: 0 12px 0 14px; border-radius: 12px; border: 1px solid #E6DCCD; background: #FFFDF9; font: inherit; font-size: 14px; font-weight: 600; color: #2B2420; display: flex; align-items: center; gap: 6px; cursor: pointer;">до 200 000 ₸
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg>
+    </button>
+    <button style="height: 42px; padding: 0 12px 0 14px; border-radius: 12px; border: 1px solid #E6DCCD; background: #FFFDF9; font: inherit; font-size: 14px; font-weight: 600; color: #2B2420; display: flex; align-items: center; gap: 6px; cursor: pointer;">Районы · 2
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg>
+    </button>
+    <button style="height: 42px; padding: 0 14px 0 12px; border-radius: 12px; border: 1px solid #C9D6C0; background: #E1E8DA; font: inherit; font-size: 14px; font-weight: 700; color: #3D553A; display: flex; align-items: center; gap: 6px; cursor: pointer;">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>
+      Без животных
+    </button>
+    <button style="height: 42px; padding: 0 14px 0 12px; border-radius: 12px; border: 1px solid #E6DCCD; background: #FFFDF9; font: inherit; font-size: 14px; font-weight: 600; color: #2B2420; display: flex; align-items: center; gap: 6px; cursor: pointer;">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5c0 4.6-3 8.4-7 10-4-1.6-7-5.4-7-10V6l7-3z"></path><path d="M9 12l2 2 4-4"></path></svg>
+      Проверенные
+    </button>
+  </div>
+
+  <div style="flex: 1; min-height: 0; display: flex; gap: 20px;">
+    <div style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 14px; overflow: hidden;">
+      <sc-for list="{{listings}}" as="l" hint-placeholder-count="4">
+        <article style="display: flex; gap: 16px; padding: 14px; background: #FFFDF9; border: {{l.border}}; border-radius: 22px; flex: none;">
+          <div style="width: 168px; height: 140px; flex: none; border-radius: 16px; background: {{l.tint}}; position: relative; display: flex; align-items: center; justify-content: center; color: #FFFDF9;">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"></rect><circle cx="9" cy="10" r="1.6"></circle><path d="M21 16l-5-5-8 8"></path></svg>
+            <span style="position: absolute; left: 10px; bottom: 10px; font-size: 11px; font-weight: 700; color: #2B2420; background: rgba(255,253,249,.9); padding: 4px 8px; border-radius: 999px;">{{l.photos}}</span>
+          </div>
+          <div style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 6px;">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 10px;">
+              <div style="min-width: 0;">
+                <div style="display: flex; align-items: baseline; gap: 6px;"><span style="font-family: 'Lora', serif; font-size: 23px; font-weight: 700;">{{l.price}}</span><span style="font-size: 13px; color: #6E6156;">{{l.per}}</span></div>
+                <div style="font-size: 13px; color: #6E6156; margin-top: 2px;">{{l.kind}}</div>
+              </div>
+              <sc-if value="{{l.fav}}" hint-placeholder-val="{{false}}">
+                <button aria-label="Убрать из избранного" style="width: 36px; height: 36px; flex: none; border-radius: 18px; border: 0; background: #F3DED3; color: #B9532F; display: flex; align-items: center; justify-content: center; cursor: pointer;">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"></path></svg>
+                </button>
+              </sc-if>
+              <sc-if value="{{l.notFav}}" hint-placeholder-val="{{true}}">
+                <button aria-label="В избранное" style="width: 36px; height: 36px; flex: none; border-radius: 18px; border: 1px solid #E6DCCD; background: #FFFDF9; color: #6E6156; display: flex; align-items: center; justify-content: center; cursor: pointer;">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"></path></svg>
+                </button>
+              </sc-if>
+            </div>
+            <div style="display: flex; align-items: center; gap: 6px; font-size: 14px; font-weight: 700;">
+              {{l.place}}
+              <sc-if value="{{l.verified}}" hint-placeholder-val="{{true}}">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#4F6B4C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Хозяин проверен"><path d="M12 3l7 3v5c0 4.6-3 8.4-7 10-4-1.6-7-5.4-7-10V6l7-3z"></path><path d="M9 12l2 2 4-4"></path></svg>
+              </sc-if>
+              <span style="font-weight: 500; color: #6E6156;">· {{l.district}}</span>
+            </div>
+            <div style="display: flex; gap: 6px; flex-wrap: wrap;">
+              <sc-for list="{{l.tags}}" as="t" hint-placeholder-count="2">
+                <span style="font-size: 12px; font-weight: 600; color: #4A3F37; background: #F1E9DE; padding: 5px 10px; border-radius: 999px;">{{t}}</span>
+              </sc-for>
+            </div>
+            <div style="flex: 1;"></div>
+            <div style="display: flex; align-items: center; justify-content: space-between; gap: 8px;">
+              <span style="display: inline-flex; align-items: center; gap: 6px; height: 28px; padding: 0 10px 0 4px; border-radius: 999px; background: {{l.matchBg}}; color: {{l.matchFg}}; font-size: 12px; font-weight: 800;">
+                <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="7.5" fill="none" stroke="currentColor" stroke-opacity=".22" stroke-width="3"></circle><circle cx="10" cy="10" r="7.5" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-dasharray="{{l.dash}}" transform="rotate(-90 10 10)"></circle></svg>
+                {{l.match}}% вам подходит
+              </span>
+              <span style="display: inline-flex; align-items: center; gap: 5px; font-size: 12px; color: #6E6156;">{{l.date}} ·
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                {{l.views}}
+              </span>
+            </div>
+          </div>
+        </article>
+      </sc-for>
+    </div>
+
+    <div style="width: 340px; flex: none; position: relative; border-radius: 24px 24px 0 0; overflow: hidden; background: #EBE1D2; border: 1px solid #E6DCCD; border-bottom: 0;">
+      <svg width="340" height="680" viewBox="0 0 340 680" aria-hidden="true" style="position: absolute; left: 0; top: 0;">
+        <path d="M200 40 C 260 30, 330 70, 340 130 L 340 220 C 290 230, 230 200, 210 160 Z" fill="#D5DEC9"></path>
+        <path d="M0 470 C 50 450, 110 480, 120 540 C 125 600, 60 640, 0 630 Z" fill="#D5DEC9"></path>
+        <path d="M-10 300 C 60 280, 120 340, 180 330 S 300 270, 350 300" stroke="#C6D6D3" stroke-width="14" fill="none"></path>
+        <path d="M-10 90 L 350 60 M-10 250 L 350 225 M-10 500 L 350 475 M-10 590 L 350 565 M20 -10 L 35 690 M160 -10 L 175 690 M310 -10 L 330 690" stroke="#F4ECE0" stroke-width="4" fill="none"></path>
+        <path d="M60 -10 L 90 690 M240 -10 L 270 690 M-10 180 L 350 140 M-10 420 L 350 400" stroke="#FFFDF9" stroke-width="10" fill="none"></path>
+        <path d="M100 200 L 225 185 L 250 290 L 205 370 L 120 360 L 92 280 Z" fill="#B9532F" fill-opacity=".1" stroke="#B9532F" stroke-width="2" stroke-dasharray="6 5"></path>
+        <path d="M140 430 L 250 418 L 272 520 L 182 548 L 132 500 Z" fill="#B9532F" fill-opacity=".1" stroke="#B9532F" stroke-width="2" stroke-dasharray="6 5"></path>
+      </svg>
+
+      <div style="position: absolute; top: 14px; left: 14px; right: 14px; display: flex; justify-content: space-between; align-items: center;">
+        <button style="height: 40px; padding: 0 14px 0 12px; border-radius: 12px; border: 0; background: #FFFDF9; font: inherit; font-size: 13px; font-weight: 700; color: #2B2420; display: flex; align-items: center; gap: 6px; box-shadow: 0 4px 14px rgba(43,36,32,.12); cursor: pointer;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l4-1L19 8l-3-3L5 16l-1 4z"></path></svg>
+          Обвести район
+        </button>
+        <button aria-label="Развернуть карту" style="width: 40px; height: 40px; border-radius: 12px; border: 0; background: #FFFDF9; color: #2B2420; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 14px rgba(43,36,32,.12); cursor: pointer;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6M10 20H4v-6M20 4l-7 7M4 20l7-7"></path></svg>
+        </button>
+      </div>
+
+      <div style="position: absolute; left: 118px; top: 236px; display: flex; flex-direction: column; align-items: center;">
+        <span style="padding: 6px 10px; border-radius: 10px; background: {{accent}}; color: #FFFFFF; font-size: 13px; font-weight: 800; box-shadow: 0 0 0 4px rgba(185,83,47,.22);">190 000 ₸</span>
+        <span style="width: 10px; height: 10px; background: {{accent}}; transform: rotate(45deg); margin-top: -6px;"></span>
+      </div>
+      <span style="position: absolute; left: 186px; top: 316px; padding: 5px 9px; border-radius: 10px; background: #2B2420; color: #FFFDF9; font-size: 12px; font-weight: 700;">87к</span>
+      <span style="position: absolute; left: 176px; top: 466px; padding: 5px 9px; border-radius: 10px; background: #2B2420; color: #FFFDF9; font-size: 12px; font-weight: 700;">230к</span>
+      <span style="position: absolute; left: 150px; top: 506px; padding: 5px 9px; border-radius: 10px; background: #2B2420; color: #FFFDF9; font-size: 12px; font-weight: 700;">120к</span>
+      <span style="position: absolute; left: 30px; top: 136px; padding: 5px 9px; border-radius: 10px; background: #FFFDF9; color: #6E6156; font-size: 12px; font-weight: 700; border: 1px solid #E6DCCD;">55к</span>
+      <span style="position: absolute; left: 262px; top: 96px; padding: 5px 9px; border-radius: 10px; background: #FFFDF9; color: #6E6156; font-size: 12px; font-weight: 700; border: 1px solid #E6DCCD;">140к</span>
+
+      <div style="position: absolute; left: 14px; right: 14px; bottom: 16px; background: #FFFDF9; border-radius: 16px; padding: 12px 14px; display: flex; align-items: center; gap: 12px; box-shadow: 0 8px 24px rgba(43,36,32,.14);">
+        <div style="width: 36px; height: 36px; flex: none; border-radius: 10px; background: #F3DED3; color: #9A3F1F; display: flex; align-items: center; justify-content: center;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"></path><circle cx="12" cy="9.5" r="2.5"></circle></svg>
+        </div>
+        <div style="min-width: 0;">
+          <div style="font-size: 13px; font-weight: 800;">Бостандыкский и Медеуский</div>
+          <div style="font-size: 12px; color: #6E6156;">46 объявлений в обведённых районах</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#B9532F","options":["#B9532F","#4F6B4C","#8A5A3B"]},"$preview":{"width":1194,"height":834}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const C = 47.12;
+    const mk = (o) => {
+      const good = o.match >= 75;
+      return Object.assign({}, o, {
+        dash: (o.match / 100 * C).toFixed(1) + ' ' + C,
+        matchBg: good ? '#E1E8DA' : '#F1E9DE',
+        matchFg: good ? '#3D553A' : '#6B5A48',
+        notFav: !o.fav,
+        border: o.active ? '1.5px solid #B9532F' : '1px solid #E6DCCD'
+      });
+    };
+    return {
+      accent: this.props.accent ?? '#B9532F',
+      listings: [
+        mk({ price: '190 000 ₸', per: '/ мес за квартиру', kind: '1-комн. квартира · 23 м² · 5/9 этаж', place: 'ЖК Grand Park', district: 'Ауэзовский', tags: ['Без животных', 'С мебелью'], match: 92, date: '16 ноября', views: 6, verified: true, fav: true, active: true, tint: '#CDB79C', photos: '1 / 8' }),
+        mk({ price: '86 666 ₸', per: '/ мес за место', kind: 'Место в 1-комн. квартире · свободно 1 из 3', place: 'ЖК Abay 130', district: 'Бостандыкский', tags: ['Для девушек', '2 соседки'], match: 78, date: '17 ноября', views: 12, verified: true, fav: false, active: false, tint: '#B8C3AC', photos: '1 / 5' }),
+        mk({ price: '55 000 ₸', per: '/ мес за комнату', kind: 'Комната в 3-комн. квартире · 14 м²', place: 'ЖК Нурлы Дала', district: 'Алатауский', tags: ['Для парней', 'Некурящие'], match: 64, date: '17 ноября', views: 3, verified: false, fav: false, active: false, tint: '#D9BFAE', photos: '1 / 4' }),
+        mk({ price: '230 000 ₸', per: '/ мес за квартиру', kind: '2-комн. квартира · 54 м² · 7/12 этаж', place: 'ул. Тимирязева, 42', district: 'Бостандыкский', tags: ['Можно с котом'], match: 71, date: '15 ноября', views: 41, verified: true, fav: false, active: false, tint: '#C2B4A4', photos: '1 / 12' })
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Квартирант — Лента</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap">
+<style>
+body{margin:0}
+a{color:#3B66D6}a:hover{color:#2B50B5}
+</style>
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+<div class="stage" id="stage">
+<div style="width: 1194px; height: 834px; position: relative; background: #FFFFFF; color: #23262B; font-family: 'Inter', sans-serif; overflow: hidden;">
+
+  <header style="height: 84px; box-sizing: border-box; padding: 0 40px; display: flex; align-items: center; gap: 32px; background: #F7F8FA; border-bottom: 1px solid #ECEDF0;">
+    <span style="display: flex; align-items: center; gap: 10px; font-size: 20px; font-weight: 800; letter-spacing: -0.01em; color: #23262B; margin-right: 12px;">
+      <span style="width: 34px; height: 34px; border-radius: 10px; background: #3B66D6; color: #FFFFFF; display: flex; align-items: center; justify-content: center;">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11l8-7 8 7v9a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-9z"></path><circle cx="12" cy="13" r="2"></circle><path d="M12 15v3"></path></svg>
+      </span>
+      Квартирант
+    </span>
+    <button style="border: 0; background: transparent; padding: 10px 0; color: #3B66D6; font: inherit; font-size: 17px; font-weight: 500; display: flex; align-items: center; gap: 8px; cursor: pointer;">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h10M18 7h2M4 12h4M12 12h8M4 17h10M18 17h2"></path><path d="M16 5v4M10 10v4M16 15v4"></path></svg>
+      Фильтры
+    </button>
+    <button style="border: 0; background: transparent; padding: 10px 0; color: #3B66D6; font: inherit; font-size: 17px; font-weight: 500; display: flex; align-items: center; gap: 8px; cursor: pointer;">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 3l1.8 5.2L17 10l-5.2 1.8L10 17l-1.8-5.2L3 10l5.2-1.8L10 3z"></path><path d="M18 14l.9 2.1L21 17l-2.1.9L18 20l-.9-2.1L15 17l2.1-.9L18 14z"></path></svg>
+      Подходят мне
+    </button>
+    <span style="flex: 1;"></span>
+    <button style="border: 0; background: transparent; padding: 10px 0; color: #3B66D6; font: inherit; font-size: 17px; font-weight: 500; display: flex; align-items: center; gap: 6px; cursor: pointer;">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg>
+      Подать
+    </button>
+  </header>
+
+  <div style="height: 60px; box-sizing: border-box; padding: 0 40px; display: flex; align-items: center; gap: 14px; border-bottom: 1px solid #ECEDF0;">
+    <a href="map.html" style="height: 40px; padding: 0 12px 0 16px; border-radius: 20px; background: #E9EFFC; color: #3B66D6; font-size: 15px; font-weight: 600; display: inline-flex; align-items: center; gap: 6px; text-decoration: none;">
+      Районы поиска · 3
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg>
+    </a>
+    <a href="#" style="height: 40px; display: inline-flex; align-items: center; gap: 10px; font-size: 15px; font-weight: 500; color: #23262B; text-decoration: none;">
+      <span style="width: 32px; height: 32px; border-radius: 16px; background: #E9EFFC; color: #3B66D6; display: flex; align-items: center; justify-content: center;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 16V11a6 6 0 0 1 12 0v5l1.5 2h-15L6 16z"></path><path d="M10 21h4"></path></svg>
+      </span>
+      Новые объявления: 3
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7A7F88" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"></path></svg>
+    </a>
+    <span style="flex: 1;"></span>
+    <button style="border: 0; background: transparent; padding: 10px 0; font: inherit; font-size: 15px; font-weight: 500; color: #23262B; display: flex; align-items: center; gap: 6px; cursor: pointer;">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 4v16M3 8l4-4 4 4M17 20V4M13 16l4 4 4-4"></path></svg>
+      Сначала подходящие
+    </button>
+  </div>
+
+  <div style="padding: 0 40px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 56px;">
+    
+      <article style="padding: 22px 0 20px; border-bottom: 1px solid #E6E7EA; display: flex; flex-direction: column; gap: 14px;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 12px;">
+          <div style="min-width: 0;">
+            <div style="display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap;">
+              <span style="font-size: 30px; font-weight: 800; letter-spacing: -0.02em;">190 000 ₸</span>
+              <span style="font-size: 16px; color: #5F6570;">/ мес за квартиру</span>
+            </div>
+            <div style="font-size: 16px; color: #5F6570; margin-top: 4px;">1-комн. квартира · 23 м²</div>
+          </div>
+          <button aria-label="В избранное" style="width: 44px; height: 44px; flex: none; border: 0; background: transparent; color: #3A3E45; display: flex; align-items: center; justify-content: center; cursor: pointer;">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"></path></svg>
+          </button>
+        </div>
+        <div style="display: flex; gap: 18px;">
+          <a href="listing.html" aria-label="Открыть объявление" style="width: 220px; height: 160px; flex: none; border-radius: 20px; background: #C9D3E6; display: flex; align-items: center; justify-content: center; color: #FFFFFF;">
+            <svg width="54" height="54" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11l8-7 8 7v9a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-9z"></path><path d="M10 21v-6h4v6"></path></svg>
+          </a>
+          <div style="flex: 1; min-width: 0; display: flex; flex-direction: column; align-items: flex-start; gap: 8px;">
+            <div>
+              <div style="font-size: 16px; font-weight: 600; color: #23262B;">ТРЦ Grand Park</div>
+              <div style="font-size: 16px; color: #5F6570; margin-top: 2px;">Ауэзовский · Grand Park</div>
+            </div>
+            
+              <span style="font-size: 14px; font-weight: 500; color: #4B5059; background: #ECEDF0; padding: 8px 14px; border-radius: 999px;">Без животных</span>
+            
+            
+              <span style="font-size: 14px; font-weight: 500; color: #3B66D6; background: #E9EFFC; padding: 8px 14px; border-radius: 999px;">Вам подходит</span>
+            
+          </div>
+        </div>
+        <div style="display: flex; align-items: center; gap: 6px; font-size: 14px; color: #5F6570;">
+          16 ноября ·
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+          <span aria-label="просмотров">6</span>
+          
+            <span style="margin-left: auto; display: inline-flex; align-items: center; gap: 6px; color: #3B66D6; font-weight: 500;">
+              <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="currentColor"></circle><path d="M7.5 12.5l3 3 6-6.5" fill="none" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+              Хозяин проверен
+            </span>
+          
+        </div>
+      </article>
+    
+      <article style="padding: 22px 0 20px; border-bottom: 1px solid #E6E7EA; display: flex; flex-direction: column; gap: 14px;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 12px;">
+          <div style="min-width: 0;">
+            <div style="display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap;">
+              <span style="font-size: 30px; font-weight: 800; letter-spacing: -0.02em;">230 000 ₸</span>
+              <span style="font-size: 16px; color: #5F6570;">/ мес за квартиру</span>
+            </div>
+            <div style="font-size: 16px; color: #5F6570; margin-top: 4px;">2-комн. квартира</div>
+          </div>
+          <button aria-label="В избранное" style="width: 44px; height: 44px; flex: none; border: 0; background: transparent; color: #3A3E45; display: flex; align-items: center; justify-content: center; cursor: pointer;">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"></path></svg>
+          </button>
+        </div>
+        <div style="display: flex; gap: 18px;">
+          <a href="listing.html" aria-label="Открыть объявление" style="width: 220px; height: 160px; flex: none; border-radius: 20px; background: #D6DCE6; display: flex; align-items: center; justify-content: center; color: #FFFFFF;">
+            <svg width="54" height="54" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11l8-7 8 7v9a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-9z"></path><path d="M10 21v-6h4v6"></path></svg>
+          </a>
+          <div style="flex: 1; min-width: 0; display: flex; flex-direction: column; align-items: flex-start; gap: 8px;">
+            <div>
+              <div style="font-size: 16px; font-weight: 600; color: #23262B;">Алатауский</div>
+              <div style="font-size: 16px; color: #5F6570; margin-top: 2px;">мкр Шугыла</div>
+            </div>
+            
+              <span style="font-size: 14px; font-weight: 500; color: #4B5059; background: #ECEDF0; padding: 8px 14px; border-radius: 999px;">Без животных</span>
+            
+            
+              <span style="font-size: 14px; font-weight: 500; color: #3B66D6; background: #E9EFFC; padding: 8px 14px; border-radius: 999px;">Вам подходит</span>
+            
+          </div>
+        </div>
+        <div style="display: flex; align-items: center; gap: 6px; font-size: 14px; color: #5F6570;">
+          16 ноября ·
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+          <span aria-label="просмотров">2</span>
+          
+        </div>
+      </article>
+    
+      <article style="padding: 22px 0 20px; border-bottom: 1px solid #E6E7EA; display: flex; flex-direction: column; gap: 14px;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 12px;">
+          <div style="min-width: 0;">
+            <div style="display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap;">
+              <span style="font-size: 30px; font-weight: 800; letter-spacing: -0.02em;">86 666 ₸</span>
+              <span style="font-size: 16px; color: #5F6570;">/ мес за место</span>
+            </div>
+            <div style="font-size: 16px; color: #5F6570; margin-top: 4px;">Место в 1-комн. · свободно 1 из 3</div>
+          </div>
+          <button aria-label="В избранное" style="width: 44px; height: 44px; flex: none; border: 0; background: transparent; color: #3A3E45; display: flex; align-items: center; justify-content: center; cursor: pointer;">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"></path></svg>
+          </button>
+        </div>
+        <div style="display: flex; gap: 18px;">
+          <a href="listing.html" aria-label="Открыть объявление" style="width: 220px; height: 160px; flex: none; border-radius: 20px; background: #A9ADB5; display: flex; align-items: center; justify-content: center; color: #FFFFFF;">
+            <svg width="54" height="54" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11l8-7 8 7v9a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-9z"></path><path d="M10 21v-6h4v6"></path></svg>
+          </a>
+          <div style="flex: 1; min-width: 0; display: flex; flex-direction: column; align-items: flex-start; gap: 8px;">
+            <div>
+              <div style="font-size: 16px; font-weight: 600; color: #23262B;">ЖК Abay 130</div>
+              <div style="font-size: 16px; color: #5F6570; margin-top: 2px;">Бостандыкский · Abay 130</div>
+            </div>
+            
+              <span style="font-size: 14px; font-weight: 500; color: #4B5059; background: #ECEDF0; padding: 8px 14px; border-radius: 999px;">Для девушек</span>
+            
+            
+          </div>
+        </div>
+        <div style="display: flex; align-items: center; gap: 6px; font-size: 14px; color: #5F6570;">
+          17 ноября ·
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+          <span aria-label="просмотров">0</span>
+          
+            <span style="margin-left: auto; display: inline-flex; align-items: center; gap: 6px; color: #3B66D6; font-weight: 500;">
+              <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="currentColor"></circle><path d="M7.5 12.5l3 3 6-6.5" fill="none" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+              Хозяин проверен
+            </span>
+          
+        </div>
+      </article>
+    
+      <article style="padding: 22px 0 20px; border-bottom: 1px solid #E6E7EA; display: flex; flex-direction: column; gap: 14px;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 12px;">
+          <div style="min-width: 0;">
+            <div style="display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap;">
+              <span style="font-size: 30px; font-weight: 800; letter-spacing: -0.02em;">55 000 ₸</span>
+              <span style="font-size: 16px; color: #5F6570;">/ мес за комнату</span>
+            </div>
+            <div style="font-size: 16px; color: #5F6570; margin-top: 4px;">Комната в квартире</div>
+          </div>
+          <button aria-label="В избранное" style="width: 44px; height: 44px; flex: none; border: 0; background: transparent; color: #3A3E45; display: flex; align-items: center; justify-content: center; cursor: pointer;">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"></path></svg>
+          </button>
+        </div>
+        <div style="display: flex; gap: 18px;">
+          <a href="listing.html" aria-label="Открыть объявление" style="width: 220px; height: 160px; flex: none; border-radius: 20px; background: #B4B8C0; display: flex; align-items: center; justify-content: center; color: #FFFFFF;">
+            <svg width="54" height="54" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11l8-7 8 7v9a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-9z"></path><path d="M10 21v-6h4v6"></path></svg>
+          </a>
+          <div style="flex: 1; min-width: 0; display: flex; flex-direction: column; align-items: flex-start; gap: 8px;">
+            <div>
+              <div style="font-size: 16px; font-weight: 600; color: #23262B;">ЖК Нурлы Дала</div>
+              <div style="font-size: 16px; color: #5F6570; margin-top: 2px;">Алатауский</div>
+            </div>
+            
+              <span style="font-size: 14px; font-weight: 500; color: #4B5059; background: #ECEDF0; padding: 8px 14px; border-radius: 999px;">Для парней</span>
+            
+            
+          </div>
+        </div>
+        <div style="display: flex; align-items: center; gap: 6px; font-size: 14px; color: #5F6570;">
+          17 ноября ·
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+          <span aria-label="просмотров">0</span>
+          
+        </div>
+      </article>
+    
+  </div>
+
+  <a href="map.html" style="position: absolute; right: 40px; bottom: 132px; height: 60px; padding: 0 28px 0 22px; border-radius: 30px; background: #3B66D6; color: #FFFFFF; font-size: 17px; font-weight: 600; display: flex; align-items: center; gap: 10px; box-shadow: 0 8px 24px rgba(59,102,214,.35); text-decoration: none;">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"></path><circle cx="12" cy="9.5" r="2.5"></circle></svg>
+    На карте
+  </a>
+
+  <nav aria-label="Основное меню" style="position: absolute; left: 50%; bottom: 22px; width: 640px; margin-left: -320px; height: 86px; box-sizing: border-box; padding: 7px; border-radius: 43px; background: rgba(255,255,255,.94); box-shadow: 0 10px 34px rgba(20,24,32,.14); border: 1px solid #ECEDF0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 4px;">
+    <a href="#" aria-current="page" style="border-radius: 36px; background: #E9EFFC; color: #3B66D6; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; font-size: 13px; font-weight: 600; text-decoration: none;">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="7" height="7" rx="2"></rect><rect x="3" y="14" width="7" height="6" rx="2"></rect><path d="M14 6h7M14 10h5M14 15h7M14 19h5"></path></svg>
+      Лента
+    </a>
+    <a href="quiz.html" style="border-radius: 36px; color: #3A3E45; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; font-size: 13px; font-weight: 500; text-decoration: none;">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="7.5" r="3.5"></circle><path d="M3 20c.6-3.8 3-6 6-6 1.2 0 2.3.3 3.2.9"></path><circle cx="17" cy="16.5" r="3"></circle><path d="M19.2 18.7L21.5 21"></path></svg>
+      Поиск
+    </a>
+    <a href="chats.html" style="border-radius: 36px; color: #3A3E45; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; font-size: 13px; font-weight: 500; text-decoration: none;">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h11a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H9l-4 3v-3H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"></path><path d="M17 8h3a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2h-1v3l-4-3h-3"></path></svg>
+      Коннекты
+    </a>
+    <a href="profile.html" style="border-radius: 36px; color: #3A3E45; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; font-size: 13px; font-weight: 500; text-decoration: none;">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c1-4 4.2-6 8-6s7 2 8 6"></path></svg>
+      Профиль
+    </a>
+  </nav>
+</div>
+</div>
+<script src="assets/app.js"></script>
+</body>
+</html>

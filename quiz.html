@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Квартирант — Анкета быта</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap">
+<style>
+body{margin:0}
+a{color:#3B66D6}a:hover{color:#2B50B5}
+</style>
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+<div class="stage" id="stage">
+<div style="width: 1194px; height: 834px; position: relative; background: linear-gradient(180deg, #2E4F9E 0%, #4A7BDB 26%, #3D68C8 62%, #0F1A33 100%); color: #23262B; font-family: 'Inter', sans-serif; overflow: hidden;">
+
+  <button aria-label="Фильтры поиска" style="position: absolute; left: 40px; top: 28px; width: 72px; height: 72px; border-radius: 36px; border: 0; background: #FFFFFF; color: #23262B; display: flex; align-items: center; justify-content: center; box-shadow: 0 6px 18px rgba(10,20,40,.18); cursor: pointer;">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h10M18 7h2M4 12h4M12 12h8M4 17h10M18 17h2"></path><path d="M16 5v4M10 10v4M16 15v4"></path></svg>
+  </button>
+
+  <section aria-labelledby="q" style="position: absolute; left: 50%; top: 40px; width: 720px; margin-left: -360px; height: 640px; box-sizing: border-box; padding: 34px 40px 40px; background: #FFFFFF; border-radius: 44px; display: flex; flex-direction: column;">
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+      <a href="#" style="display: flex; align-items: center; gap: 12px; color: #5F6570; font-size: 17px; font-weight: 500; text-decoration: none;">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"></path></svg>
+        5 / 16 · Быт
+      </a>
+      <a href="#" style="color: #5F6570; font-size: 17px; font-weight: 500; text-decoration: none;">Пропустить</a>
+    </div>
+    <div style="height: 4px; border-radius: 2px; background: #ECEDF0; margin-top: 18px;"><div style="width: 31%; height: 4px; border-radius: 2px; background: #3B66D6;"></div></div>
+
+    <div style="flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 22px; text-align: center;">
+      <svg width="72" height="72" viewBox="0 0 24 24" fill="none" stroke="#9EA3AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 9h4v11a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V9z"></path><path d="M10.5 9V6.5h3V9"></path><path d="M11 3.5h3l.5 3"></path><path d="M10 13h4M10 16h4"></path><circle cx="5" cy="4" r=".6"></circle><circle cx="7" cy="5.5" r=".6"></circle><circle cx="5" cy="7" r=".6"></circle><circle cx="7.5" cy="3" r=".6"></circle></svg>
+      <h1 id="q" style="margin: 0; font-size: 36px; font-weight: 800; letter-spacing: -0.02em; line-height: 1.2;">Как часто вы убираетесь?</h1>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 14px;">
+      <div style="display: flex; justify-content: center; gap: 12px;">
+        <button style="height: 56px; padding: 0 26px; border-radius: 28px; border: 0; background: #E9EAEE; color: #4B5059; font: inherit; font-size: 18px; font-weight: 500; cursor: pointer;">Пару раз в неделю</button>
+        <button style="height: 56px; padding: 0 26px; border-radius: 28px; border: 0; background: #E9EAEE; color: #4B5059; font: inherit; font-size: 18px; font-weight: 500; cursor: pointer;">Когда накопится</button>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px;">
+        <button style="height: 84px; border-radius: 26px; border: 2px solid #3B66D6; background: #E9EFFC; color: #3B66D6; font: inherit; font-size: 19px; font-weight: 600; display: flex; align-items: center; justify-content: center; gap: 8px; cursor: pointer;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>
+          Каждый день
+        </button>
+        <button style="height: 84px; border-radius: 26px; border: 0; background: #E9EAEE; color: #4B5059; font: inherit; font-size: 19px; font-weight: 500; cursor: pointer;">Раз в неделю</button>
+      </div>
+    </div>
+  </section>
+
+  <nav aria-label="Основное меню" style="position: absolute; left: 50%; bottom: 22px; width: 640px; margin-left: -320px; height: 86px; box-sizing: border-box; padding: 7px; border-radius: 43px; background: rgba(236,238,243,.92); box-shadow: 0 10px 34px rgba(10,16,32,.25); display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 4px;">
+    <a href="feed.html" style="border-radius: 36px; color: #3A3E45; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; font-size: 13px; font-weight: 500; text-decoration: none;">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="7" height="7" rx="2"></rect><rect x="3" y="14" width="7" height="6" rx="2"></rect><path d="M14 6h7M14 10h5M14 15h7M14 19h5"></path></svg>
+      Лента
+    </a>
+    <a href="swipe.html" aria-current="page" style="border-radius: 36px; background: #D3DDF5; color: #3B66D6; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; font-size: 13px; font-weight: 600; text-decoration: none;">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="7.5" r="3.5"></circle><path d="M3 20c.6-3.8 3-6 6-6 1.2 0 2.3.3 3.2.9"></path><circle cx="17" cy="16.5" r="3"></circle><path d="M19.2 18.7L21.5 21"></path></svg>
+      Поиск
+    </a>
+    <a href="chats.html" style="border-radius: 36px; color: #3A3E45; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; font-size: 13px; font-weight: 500; text-decoration: none;">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h11a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H9l-4 3v-3H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"></path><path d="M17 8h3a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2h-1v3l-4-3h-3"></path></svg>
+      Коннекты
+    </a>
+    <a href="profile.html" style="border-radius: 36px; color: #3A3E45; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; font-size: 13px; font-weight: 500; text-decoration: none;">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c1-4 4.2-6 8-6s7 2 8 6"></path></svg>
+      Профиль
+    </a>
+  </nav>
+</div>
+</div>
+<script src="assets/app.js"></script>
+</body>
+</html>
